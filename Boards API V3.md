@@ -125,10 +125,12 @@ POST /cards/{cardID}/copy
 Copies a card to a board. If the destination board is not the board the card belongs to, best efforts are made to preserve card properties that match property definitions for the destination board. If `move` is true then the original card is deleted after the copy. 
 
 Body: model.CopyCard
+```
 {
   boardID: {destinationBoardID},
   move: {boolean}
 }
+```
 
 Returns: model.Card - the new card
 
