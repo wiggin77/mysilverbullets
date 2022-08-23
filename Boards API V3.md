@@ -70,7 +70,7 @@ Returns: model.BoardMetadata
 ## Cards
 
 ### createCard
-POST /boards/{boardID}
+POST /boards/{boardID}/cards
 
 Creates a new card.
 
@@ -88,7 +88,7 @@ Gets the specified card.
 Returns: model.Card
 
 ### getCards
-GET /boards/{boardID}
+GET /boards/{boardID}/cards
 
 Gets cards for the specified board.
 
@@ -113,7 +113,7 @@ DELETE /cards/{cardID}
 Deletes the specified card and child blocks.
 
 ### undeleteCard
-POST /cards/{cardID}
+POST /cards/{cardID}/undelete
 
 Undeletes the specified card and all children.
 
